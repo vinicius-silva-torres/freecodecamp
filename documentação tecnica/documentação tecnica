@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Technical Documentation Page</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <nav id="navbar">
+      <header><h2>Resumo CSS</h2></header>
+     <ul class="menu">
+        <li><a class="nav-link" href="#CSS">CSS</a></li>
+        <li><a class="nav-link" href="#Seletores">Seletores</a></li>
+        <li><a class="nav-link" href="#Cascata">Cascata</a></li>
+        <li><a class="nav-link" href="#Layout">Layout</a></li>
+        <li><a class="nav-link" href="#Responsividade">Responsividade</a></li>
+      </ul>
+    </nav>
+
+    <main id="main-doc">
+
+      <section class="main-section" id="CSS">
+        <header>
+          <h2 >CSS</h2>
+        </header>
+
+        <p>
+          CSS é uma linguagem usada para definir o estilo visual de páginas HTML.
+        </p>
+        <p>
+          Com CSS é possível alterar cores, fontes, tamanhos e espaçamentos.
+        </p>
+        <p>
+          Ele ajuda a separar o conteúdo da parte visual do site.
+        </p>
+        <p>
+          Essa separação deixa o código mais organizado e fácil de manter.
+        </p>
+        <p>
+          Um mesmo arquivo CSS pode ser reutilizado em várias páginas.
+        </p>
+
+        <pre><code>
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="Seletores">
+        <header>
+          <h2 >Seletores</h2>
+        </header>
+
+        <p>
+          Seletores indicam quais elementos HTML receberão estilos.
+        </p>
+        <p>
+          Eles podem selecionar tags, classes ou identificadores.
+        </p>
+        <p>
+          Cada tipo de seletor tem um nível de prioridade.
+        </p>
+        <p>
+          Usar seletores corretos evita conflitos no CSS.
+        </p>
+        <p>
+          Um bom uso de seletores melhora a leitura do código.
+        </p>
+
+        <pre><code>
+p {
+  color: blue;
+}
+
+.classe {
+  margin: 10px;
+}
+
+#id {
+  padding: 5px;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="Cascata">
+        <header>
+          <h2 >Cascata</h2>
+        </header>
+
+        <p>
+          A cascata define qual regra CSS será aplicada ao elemento.
+        </p>
+        <p>
+          Quando existem várias regras, o navegador precisa decidir.
+        </p>
+       <ul>
+         <li>
+          A ordem do código influencia nessa decisão.
+        </li>
+        
+        <li>
+          A especificidade dos seletores também é levada em conta.
+        </li>
+        </ul>
+        <p>
+          Entender a cascata ajuda a evitar erros comuns no CSS.
+        </p>
+
+        <pre><code>
+p {
+  color: red;
+}
+
+div p {
+  color: green;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="Layout">
+        <header>
+          <h2 >Layout</h2>
+        </header>
+
+        <p>
+          O layout define como os elementos aparecem na página.
+        </p>
+        <p>
+          Ele controla alinhamento e espaçamento dos conteúdos.
+        </p>
+        <p>
+          Um bom layout melhora a organização visual.
+        </p>
+        <p>
+          CSS moderno oferece ferramentas para criar layouts flexíveis.
+        </p>
+        <p>
+          Flexbox e Grid são muito usados para esse fim.
+        </p>
+
+        <pre><code>
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+        </code></pre>
+      </section>
+
+      <section class="main-section" id="Responsividade">
+        <header>
+          <h2 >Responsividade</h2>
+        </header>
+
+        <p>
+          Responsividade permite que o site se adapte a diferentes telas.
+        </p>
+        <p>
+          Isso é importante para celulares e tablets.
+        </p>
+        <ul>
+          <li>Um site responsivo melhora a experiência do usuário.
+        </li>
+        <li>
+          Media queries ajudam a aplicar estilos específicos.
+        </li>
+        <li>
+          Hoje a responsividade é essencial no desenvolvimento web.
+        </li>
+        </ul>
+
+        <pre><code>
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  } }
+        </code></pre>
+      </section>
+
+    </main>
+
+  </body>
+</html>
