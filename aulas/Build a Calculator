@@ -1,0 +1,72 @@
+/**
+ * LIÇÕES APRENDIDAS NESTE ARQUIVO:
+ * 1. Criar funções reutilizáveis para operações matemáticas básicas.
+ * 2. Usar o operador ternário `? :` para evitar erros de divisão por zero.
+ * 3. Usar o operador `**` para exponenciação simples.
+ * 4. Usar o objeto nativo `Math` para operações complexas como raiz quadrada (`Math.sqrt`).
+ */
+
+/**
+ * Calcula a soma de dois números.
+ */
+function calculateSum(num1, num2) {
+  return num1 + num2;
+}
+
+console.log(calculateSum(2, 5));
+console.log(calculateSum(10, 10));
+console.log(calculateSum(5, 5));
+
+/**
+ * Calcula a diferença entre dois números.
+ */
+function calculateDifference(num1, num2) {
+  return num1 - num2;
+}
+
+console.log(calculateDifference(22, 5));
+console.log(calculateDifference(12, 1));
+console.log(calculateDifference(17, 9));
+
+/**
+ * Calcula a (multiplicação) de dois números.
+ */
+function calculateProduct(num1, num2) {
+  return num1 * num2;
+}
+
+console.log(calculateProduct(13, 5));
+
+/**
+ * Calcula o quociente (divisão) de dois números.
+ * Aprendizado: Valida se o divisor é zero para evitar erros matemáticos.
+ */
+function calculateQuotient(num1, num2) {
+  // Operador ternário substitui um 'if/else' simples
+  return num2 === 0 ? "Error: Division by zero" : num1 / num2;
+}
+
+console.log(calculateQuotient(7, 11));
+console.log(calculateQuotient(3, 0));
+
+/**
+ * Calcula o quadrado de um número.
+ * Aprendizado: O operador `**` substitui o Math.pow(num, 2).
+ */
+function calculateSquare(num) {
+  return num ** 2;
+}
+
+console.log(calculateSquare(2));
+console.log(calculateSquare(9));
+
+/**
+ * Calcula a raiz quadrada de um número.
+ * Aprendizado: Uso do método nativo Math.sqrt().
+ */
+function calculateSquareRoot(num) {
+  return Math.sqrt(num);
+}
+
+console.log(calculateSquareRoot(25));
+console.log(calculateSquareRoot(100));
