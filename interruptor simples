@@ -1,9 +1,12 @@
 let isDay = false
 let isLightOn = true
 let batteryLevel = 50
+let isWorking = isLightOn === true
 
 console.log("Daytime?")
 console.log(isDay)
 console.log("Lights on?")
 console.log(isLightOn)
-console.log
+console.log("Battery level?")
+console.log(batteryLevel + "%")
+console.log(isWorking)
