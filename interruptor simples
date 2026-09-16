@@ -1,0 +1,9 @@
+let isDay = false
+let isLightOn = true
+let batteryLevel = 50
+
+console.log("Daytime?")
+console.log(isDay)
+console.log("Lights on?")
+console.log(isLightOn)
+console.log
