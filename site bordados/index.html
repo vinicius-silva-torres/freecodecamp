@@ -1,24 +1,96 @@
 <!doctype html>
-<html>
+<html lang="pt-BR">
   <head>
-    <title></title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Seu Bordado | Peças artesanais bordadas à mão</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <script src="script.js"></script>
-    <header >
-    
-    <h1>Seu Bordado</h1>
 
-    <nav class="cabecalho">
-       <a href="#">Início</a>
-       <a href="#">Bordados</a>
-       <a href="#">Sobre</a>
-       <a href="#">Contato</a>
+    <header>
+      <h1>Seu Bordado</h1>
 
-    </nav>
+      <nav class="cabecalho">
+        <a href="#inicio">Início</a>
+        <a href="#bordados">Bordados</a>
+        <a href="#diferenciais">Sobre</a>
+        <a href="#contato">Contato</a>
+      </nav>
     </header>
-    
+
+    <main>
+
+      <section id="inicio" class="hero">
+        <h2>Bordados feitos à mão, com alma</h2>
+        <p>Peças exclusivas e personalizadas para trazer delicadeza ao seu dia a dia.</p>
+        <a href="#bordados" class="botao-cta">Ver bordados</a>
+      </section>
+
+      <section id="bordados" class="galeria">
+        <h2>Nossos bordados</h2>
+        <div class="grade-galeria">
+          <article class="card-bordado">
+            <img src="imagens/bordado1.jpg" alt="Bordado floral em ponto cruz" />
+            <h3>Flores do Campo</h3>
+            <p>Bordado floral, 20x20cm</p>
+          </article>
+          <article class="card-bordado">
+            <img src="imagens/bordado2.jpg" alt="Bordado com motivo de folhas verdes" />
+            <h3>Jardim Verde</h3>
+            <p>Bordado botânico, 25x25cm</p>
+          </article>
+          <article class="card-bordado">
+            <img src="imagens/bordado3.jpg" alt="Bordado com nome personalizado" />
+            <h3>Nome Bordado</h3>
+            <p>Personalizado sob encomenda</p>
+          </article>
+          <!-- repetir article.card-bordado para cada peça nova -->
+        </div>
+      </section>
+
+      <section id="diferenciais" class="diferenciais">
+        <h2>Por que escolher nossos bordados?</h2>
+        <ul>
+          <li>Feito à mão, peça por peça</li>
+          <li>Materiais de alta qualidade</li>
+          <li>Personalização sob encomenda</li>
+          <li>Entrega cuidadosa para todo o Brasil</li>
+        </ul>
+      </section>
+
+      <section class="produtos">
+        <h2>Destaques</h2>
+        <div class="grade-produtos">
+          <article class="card-produto">
+            <img src="imagens/produto1.jpg" alt="Almofada bordada com motivo floral" />
+            <h3>Almofada Bordada</h3>
+            <p>R$ 89,90</p>
+          </article>
+          <article class="card-produto">
+            <img src="imagens/produto2.jpg" alt="Pano de prato bordado" />
+            <h3>Pano de Prato Bordado</h3>
+            <p>R$ 34,90</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="conversao">
+        <h2>Gostou? Compre direto na Shopee</h2>
+        <a href="LINK_DA_SUA_LOJA_SHOPEE" class="botao-cta" target="_blank" rel="noopener">
+          Ir para a loja
+        </a>
+      </section>
+
+    </main>
+
+    <footer id="contato">
+      <h2>Contato</h2>
+      <p>Email: contato@seubordado.com</p>
+      <p>Instagram: @seubordado</p>
+    </footer>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
