@@ -1,0 +1,111 @@
+
+:root {
+    --pink: #faaec7;
+    --vinho: #2D1B2E;
+    --fundo: #FFF7FA;
+    --menu: rgb(255, 113, 220);
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #333;
+    background-color: var(--pink)
+    
+}
+
+#navegacao {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5%;
+    background-color: var(--menu);
+    padding: 20px 5%;
+}
+
+#inicio {
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center
+    
+}
+
+.foto-bordado-principal{
+    
+    width: auto;
+    height: 70vh;
+    border-radius: 15%;
+   animation: mudarFormato linear;
+    animation-timeline: scroll();
+}
+
+@keyframes mudarFormato {
+    from {
+        border-radius: 10%;
+    }
+
+    to {
+        border-radius: 30% 30% 30% 30%;
+    }
+}
+
+
+
+#bordados {
+
+   display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#bordados img {
+
+     object-fit: cover;
+    height: 40vh;
+    animation: crescer linear both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+@keyframes crescer {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+
+#img-presente-exclusivo {
+
+padding-top: 3%;
+
+}
+
+.titulo-bordados{
+
+background-color: #ff6af3;
+border-radius: 40%;
+animation: aparecerTitulo linear both;
+animation-timeline: view();
+animation-range: entry 0% cover 30%;
+
+}
+
+@keyframes aparecerTitulo {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
